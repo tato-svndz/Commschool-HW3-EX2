@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        margin: auto;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <th>Control Type</th>
+            <th>Data</th>
+            <th>Control</th>
+          </tr>
+          <tr>
+            <td>Text Box</td>
+            <td>Name:</td>
+            <td>
+              <input type="text" value="Enter Name" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>Password:</td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td>Text Area</td>
+            <td>Address</td>
+            <td>
+              <textarea name="textArea" cols="21" rows="3">Enter Text</textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Drop Down List</td>
+            <td>Area</td>
+            <td>
+              <select name="dropDownList">
+                <option value="Center">Center</option>
+                <option value="Left">Left</option>
+                <option value="Right">Right</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Check Box</td>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" /> Sport <br />
+              <input type="checkbox" /> Reading <br />
+              <input type="checkbox" /> T.V. <br />
+              <input type="checkbox" /> Internet <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Radio Buttons</td>
+            <td>Gender:</td>
+            <td>
+              <fieldset>
+                <legend>Select Your Gender</legend>
+                <div>
+                  <input
+                    type="radio"
+                    name="radioSelect"
+                    value="Male"
+                    checked=""
+                  />
+                  <label for="huey">Male</label>
+                </div>
+                <div>
+                  <input type="radio" name="radioSelect" value="Female" />
+                  <label for="Female">Female</label>
+                </div>
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td>File Upload</td>
+            <td>Your Image:</td>
+            <td>
+              <input type="file" />
+            </td>
+          </tr>
+          <tr>
+            <td>Buttons</td>
+            <td>Actions:</td>
+            <td>
+              <input type="submit" />
+              <input type="reset" />
+              <button value="Button">Button</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
